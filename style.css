@@ -1,9 +1,91 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url("BebasNeue-Regular.ttf");
+}
+
 header, main, footer {
     width: 90%;
-    min-height: 100px;
     background-color: white;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 body {
     background: rgb(94, 38, 94);
 }
+
+header {
+    font-size: 36pt;
+    text-align: center;
+    color:rgb(94, 38, 94);
+    font-family: BebasNeue;
+}
+
+nav ul {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: auto;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 20pt;}
+
+    nav ul li:hover {
+       color: white;
+        background-color: rgb(94, 38, 94);
+        text-shadow: 2px 2px 4px #000000;
+        border-radius: 25px;
+    }
+
+    .dark-blue {
+        margin: -20px;
+    }
+
+
+ 
+
+    #car1 {
+        display: block;
+    }
+    #car2, #car3 {
+        display: none;
+    }
+
+    .carousel {
+        margin-top: 50px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .carousel img {
+        width: 100%;
+        margin-top: -100px;
+    }
+    .sipka {
+        position: absolute;
+        color: white;
+        top: 120px;
+        font-size: xx-large;
+        padding: 10px;
+    }
+    #sipkaL {
+        text-align: left;
+        width: 60px;
+        left: 0;
+    }
+    #sipkaP {
+        text-align: right;
+        width: 60px;
+        right: 0;
+    }
